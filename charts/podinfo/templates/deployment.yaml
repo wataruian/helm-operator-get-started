@@ -32,8 +32,6 @@ spec:
       {{- if .Values.serviceAccount.enabled }}
       serviceAccountName: {{ template "podinfo.serviceAccountName" . }}
       {{- end }}
-      imagePullSecrets:
-        - name: regcred
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
