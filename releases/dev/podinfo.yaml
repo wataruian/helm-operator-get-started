@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: gcr.io/light-project-integration/podinfo
-      tag: dev-5hxhzj3u
+      tag: dev-w8koozwv
     replicaCount: 1
     hpa:
       enabled: false
