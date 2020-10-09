@@ -47,6 +47,12 @@ spec:
         thresholdRange:
           min: 99
         interval: 1m
+      - name: latency
+        templateRef:
+          name: latency
+        thresholdRange:
+          max: 0.5
+        interval: 1m
     # testing (optional)
     webhooks:
       - name: acceptance-test
