@@ -5,7 +5,7 @@ set -o errexit # Bail out on any error
 ########################################################################################################################
 # Define constants here
 fluxCDChartUrl="https://charts.fluxcd.io"
-fluxNamespace="flux"
+fluxNamespace="fluxcd"
 fluxDirectory="flux"
 
 helmOperatorCrdUrl="https://raw.githubusercontent.com/fluxcd/helm-operator/master/deploy/crds.yaml"
