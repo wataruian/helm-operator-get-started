@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: wataruian/podinfo
-      tag: dev-hdtwcel9
+      tag: dev-5hxhzj3u
     replicaCount: 1
     hpa:
       enabled: false
