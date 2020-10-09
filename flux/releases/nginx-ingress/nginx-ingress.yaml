@@ -1,0 +1,21 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: nginx-ingress
+  namespace: nginx-ingress
+spec:
+  releaseName: nginx-ingress
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com
+    name: nginx-ingress
+    version: 1.41.3
+  values:
+    controller:
+      #defaultBackendService: default-http-backend/default-http-backend
+      service:
+        loadBalancerIP: 34.69.57.233
+      metrics:
+        enabled: true
+      podAnnotations:
+        prometheus.io.scrape: true
+        prometheus.io.port: 10254
