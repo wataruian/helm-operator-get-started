@@ -30,7 +30,7 @@ spec:
     # container port number or name
     targetPort: 9898
   analysis:
-    interval: 1m
+    interval: 10
     threshold: 10
     iterations: 10
     match:
